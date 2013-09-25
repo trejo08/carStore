@@ -1,5 +1,5 @@
 
-<DOCTYPE! html>
+<!--<!DOCTYPE html>-->
 <html lang="en">
 	<head>
 		<!--[if IE 8]>
@@ -93,6 +93,11 @@
 
 		<meta name="p:domain_verify" content="7524249be3f25e6cec9d0a4a16de6484"/>
 		<meta name="google-site-verification" content="Bni6J2_GDXt8hBSyjTMJJmomxeAr7wCx6k3fV4nm43Q" />
+
+
+		<!-- SectionWithJQueryValidator -->
+		<script type="text/javascript" src='jquery-1.10.2.min.js' ></script>
+		<script type="text/javascript" src='jquery.validate.js' ></script>
 	</head>
 	<body class="customers-login  customer-area" id="page-customers/login">
 		<div id="root">
@@ -186,6 +191,7 @@
 					</ul>
 				</nav>
 			</header>
+
 			<div style='height:120px'></div>
 			<article id="content" >
 				<div class="template_header">
@@ -193,7 +199,7 @@
 				</div>
 				<div id="template">
 					<div id="customer">
-						<form method='post' action='https://peternappi.myshopify.com/account/login' id='customer_login' accept-charset='UTF-8'>
+						<form method='post' action='#' id='customer_login' accept-charset='UTF-8'>
 							<input name='form_type' type='hidden' value='customer_login'/>
 							<input name="utf8" type="hidden" value="?"> 
 							<div id="login_email" class="clearfix large_form">
@@ -232,6 +238,7 @@
 						</form>
 					</div>
 				</div>
+
 				<script type="text/javascript">
 					function showRecoverPasswordForm() {
 						document.getElementById('recover-password').style.display = 'inline-block';
@@ -243,6 +250,7 @@
 					}
 					if (window.location.hash == '#recover') { showRecoverPasswordForm() }
 				</script>
+
 			</article>
 
 			<footer id="footer">
