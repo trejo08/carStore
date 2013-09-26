@@ -85,13 +85,20 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script><script type="text/javascript" src="http://cdn.shopify.com/s/global/ga_urchin_forms.js?f66f59f3e47efcacbb8eb15c355d33206d85625f"></script>
-<link rel="stylesheet" href="css/theme-controls.css" type="text/css" />
+	<link rel="stylesheet" href="css/theme-controls.css" type="text/css" />
 
-</head>
+
+		<!-- Scrips for Validate forms -->
+		<script type="text/javascript" src='js/jquery-1.10.2.min.js' ></script>
+		<script type="text/javascript" src='js/jquery.validate.js' ></script>
+		<script type="text/javascript" src='js/signup_validate.js' ></script>
+
+	</head>
+
 	<body class="page-about-us " id="page-page.about-us">
 		<div id="root">
 			<header id="top">
-<h2><a href="../" target="_self" accesskey="h"><img src="images/logo.jpg"alt="Logo" border="0"></a></h2>
+				<h2><a href="../" target="_self" accesskey="h"><img src="images/logo.jpg"alt="Logo" border="0"></a></h2>
 				<nav id="skip">
 					<ul>
 						<li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
@@ -164,12 +171,47 @@
 			<div style='height:120px'></div>
 	
 			
-<article id="content" >
+			<article id="content" >
 				<p>
 				<img alt="" height="501" src="images/logo.%20CarStore%20III.png" width="970"></p>
-<h1>Registro de Usuario</h1>
-<div class="col-9">
-	</div><!-- .col-9 -->
+				<h1>Registro de Usuario</h1>
+				<div class="col-9">
+				</div><!-- .col-9 -->
+				<div id="template">
+					<div id="customer">
+						<form method='post' action='#' id='customer_login' accept-charset='UTF-8' class='contact_message'>
+
+					    	<div id="contact_name" class="clearfix large_form">
+					    		<label for="contactName" class="login">Nombre</label>
+					    		<input type="text" value="" name="signup[name]" id="contactName" class="large" size="30" placeholder='Nombre' />
+					    	</div>
+
+					    	<div id="contact_lastname" class="clearfix large_form">
+					    		<label for="contactLastname" class="login">Apellido</label>
+					    		<input type="text" value="" name="signup[lastname]" id="signupLastname" class="large" size="30" placeholder='Apellido'/>
+					    	</div>
+
+					    	<div id="sign_up_email" class="clearfix large_form">
+					    		<label for="signupEmail" class="login">Email Address</label>
+					    		<input type="text" value="" name="signup[email]" id="signupEmail" class="large" size="30" placeholder='example@email.com'/>
+					    	</div>
+
+					    	<div id="signup_password" class="clearfix large_form">
+					    		<label for="signup_password" class="login">Password</label>
+					    		<input type="password" value="" name="signup[password]" id="signup_password" class="large password" size="30" />
+					    	</div>
+
+					    	<div id="signup_repeat_password" class="clearfix large_form">
+					    		<label for="signup_password_repeat" class="login">Password</label>
+					    		<input type="password" value="" name="signup[password_compare]" id="signup_password_repeat" class="large password" size="30" />
+					    	</div>
+
+					    	<div class="action_bottom">
+					    		<input class="btn" type="submit" value="Sign In" />
+					    		<span class="note">or <a href="index.html">Return to Store</a></span>
+					    	</div>
+					    </form>
+					</div>
 			</article>
 			
 			<footer id="footer"><p>&copy; <span class="date">2013</span> <a href="../../../" target="_self">Programacion 4</a></p>
