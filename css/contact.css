@@ -1,0 +1,66 @@
+#contact_message, #recover-password,#activation-template,
+    /*#recover-password-wrap, */
+    /*#customer-reset-password form, */
+    #customer-account-activation form,
+    #create_customer {
+    width: 346px;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 42px 37px 38px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid;
+    margin-bottom: 112px;
+    text-align: left;
+}
+
+body:not(:-moz-handler-blocked) #contact_message, 
+        body:not(:-moz-handler-blocked) #recover-password-wrap, 
+        body:not(:-moz-handler-blocked) #customer-account-activation form,
+        body:not(:-moz-handler-blocked) #create_customer {
+    -moz-box-shadow: none;
+}
+
+#contact_message .errors, 
+        #recover-password .errors, 
+        #customer-reset-password .errors, 
+        #customer-account-activation .errors,
+        #create_customer .errors {
+    width: 324px;
+    margin: 0 auto 30px;
+    background-color: #fcedec;
+    border: 1px solid #fb8077;
+    padding: 10px;
+    -webkkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#contact_message .errors ul, 
+        #recover-password .errors ul, 
+        #customer-reset-password .errors ul, 
+        #customer-account-activation .errors ul,
+        #create_customer .errors ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#contact_message label, 
+        #recover-password-wrap label, 
+        #customer-reset-password label, 
+        #customer-account-activation label,
+        #create_customer label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+#contact_message .styled-input, 
+        #recover-password-wrap .styled-input, 
+        #customer-reset-password .styled-input, 
+        #customer-account-activation .styled-input,
+        #create_customer .styled-input {
+    width: 326px;
+}
